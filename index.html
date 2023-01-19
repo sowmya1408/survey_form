@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1 " />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p class="italics">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <div>
+      <form>
+        <fieldset>
+          <label for="name"
+            >Name
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter you name"
+              required
+          /></label>
+          <label for="email"
+            >Email
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+          /></label>
+          <label
+            >Age<span class="italics font">(optional)</span
+            ><input type="number" id="age" name="age" placeholder="Age"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label for="current_role"
+            >Which option best describes your current role?
+            <select id="current_role">
+              <option id="select-text-color" value="">
+                Select current role
+              </option>
+              <option value="1">Student</option>
+              <option value="2">Full time job</option>
+              <option value="3">Full time learner</option>
+              <option value="4">Prefer not to say</option>
+              <option value="5">Other</option>
+            </select>
+            <label>Would you recomment freeCodeCamp to a friend</label>
+            <label class="spacing" for="definitely"
+              ><input
+                class="inline"
+                type="radio"
+                name="recommendation"
+                id="definitely"
+              />
+              Definitely
+            </label>
+            <label class="spacing" for="maybe"
+              ><input
+                class="inline"
+                type="radio"
+                name="recommendation"
+                id="maybe"
+              />
+              Maybe
+            </label>
+            <label class="spacing" for="notsure"
+              ><input
+                class="inline"
+                type="radio"
+                name="recommendation"
+                id="notsure"
+              />
+              Not sure
+            </label>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="favorite" class="remove-space"
+            >What is your favorite feature of freeCodeCamp?
+            <select id="favorite">
+              <option value="">Select an option</option>
+              <option value="1">Challenges</option>
+              <option value="2">Projects</option>
+              <option value="3">Community</option>
+              <option value="4">Open source</option>
+            </select>
+          </label>
+          <label
+            >What would you like to see improved?<span class="italics font"
+              >(check all that apply)</span
+            ></label
+          >
+          <label for="frontend" class="spacing"
+            ><input
+              class="inline"
+              type="checkbox"
+              id="frontend"
+              name="improvements"
+            />
+            front-end projects</label
+          >
+          <label for="backend" class="spacing"
+            ><input
+              class="inline"
+              id="backend"
+              type="checkbox"
+              name="improvements"
+            />
+            back-end project</label
+          >
+          <label for="data-visual" class="spacing"
+            ><input
+              class="inline"
+              id="data-visual"
+              type="checkbox"
+              name="improvements"
+            />
+            data visualization</label
+          >
+          <label for="challenges" class="spacing"
+            ><input
+              class="inline"
+              id="challenges"
+              type="checkbox"
+              name="improvements"
+            />
+            challenges</label
+          >
+          <label for="communtiy" class="spacing"
+            ><input
+              class="inline"
+              id="community"
+              type="checkbox"
+              name="improvements"
+            />
+            open source community
+          </label>
+          <label for="help" class="spacing"
+            ><input
+              class="inline"
+              id="help"
+              type="checkbox"
+              name="improvements"
+            />
+            gitter help rooms</label
+          >
+          <label for="videos" class="spacing"
+            ><input
+              class="inline"
+              id="videos"
+              type="checkbox"
+              name="improvements"
+            />
+            videos</label
+          >
+          <label for="meetups" class="spacing"
+            ><input
+              class="inline"
+              id="meetups"
+              type="checkbox"
+              name="improvements"
+            />
+            city meetups</label
+          >
+          <label for="wiki" class="spacing"
+            ><input
+              class="inline"
+              id="wiki"
+              type="checkbox"
+              name="improvements"
+            />
+            wiki</label
+          >
+          <label for="forum" class="spacing"
+            ><input
+              class="inline"
+              id="forum"
+              type="checkbox"
+              name="improvements"
+            />
+            forum</label
+          >
+          <label for="additional" class="spacing"
+            ><input
+              class="inline"
+              id="additional"
+              type="checkbox"
+              name="improvements"
+            />
+            additional courses</label
+          >
+        </fieldset>
+        <fieldset>
+          <label class="remove-space" for="comments"
+            >Any comments or suggestions?</label
+          >
+          <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="25"
+            placeholder="Enter your comment here..."
+          ></textarea>
+          <button class="button-style" type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
