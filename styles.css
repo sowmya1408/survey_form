@@ -103,3 +103,8 @@ select:focus {
   outline: none;
   border: 3px solid rgba(29, 29, 131, 0.719);
 }
+
+#current_role:focus,
+#favorite:focus {
+  color: black;
+}
